@@ -101,26 +101,7 @@ Public Class Form1
         Tab1ToolStripMenuItem.HideDropDown()
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs)
-        Form1_Load(sender, e, Label2, GetLabel1(), GetLabel3(), GetLabel4())
-    End Sub
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    Private Function GetLabel1() As Label
-        Return Label1
-    End Function
-
-    Private Function GetLabel3() As Label
-        Return Label3
-    End Function
-
-    Private Function GetLabel4() As Label
-        Return Label4
-    End Function
-
-    Private Sub Form1_Load(sender As Object, e As EventArgs, label2 As Label, label1 As Label, label3 As Label, label4 As Label)
-        label1.Text = WebView1.Source.ToString
-        label2.Text = WebView2.Source.ToString
-        label3.Text = WebView3.Source.ToString
-        label4.Text = WebView4.Source.ToString
     End Sub
 End Class
